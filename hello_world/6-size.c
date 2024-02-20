@@ -1,13 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - Entry point 
+ * main - main funtion 
  *
- * Return: Always 0
+ * Return: Always 0. (Success)
  */
-
 int main(void)
-
 {
 	int a;
 	long int b;
@@ -22,4 +20,3 @@ int main(void)
 	printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
 	return (0);
 }
-
