@@ -4,7 +4,7 @@
  * main - prints a string in reverse
  * @s: The string to be printed
 */
-void print_rev(char *s);
+void print_rev(char *s)
 {
 int c = 0;
 
