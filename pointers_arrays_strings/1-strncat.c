@@ -6,7 +6,7 @@
  * @src: source string
  * @n: number of byte print
  *
- * return: destination string
+ * Return: destination string
 */
 char *_strncat(char *dest, char *src, int n)
 {
