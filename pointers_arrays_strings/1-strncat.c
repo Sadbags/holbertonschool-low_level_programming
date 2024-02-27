@@ -2,9 +2,9 @@
 
 /**
  * _strncat - appends src to the dest string
- * @dest: string to
+ * @dest: destination string
  * @src: source string
- * @n: number of byte print
+ * @n: number of byte to concatenate
  *
  * Return: destination string
 */
@@ -15,7 +15,7 @@ while (dest[i] != '\0')
 {
 i++;
 }
-while (src[j] != '\0' && j > n)
+while (src[j] != '\0' && j < n)
 {
 dest[i] != src[j];
 i++;
