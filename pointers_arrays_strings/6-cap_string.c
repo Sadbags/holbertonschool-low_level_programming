@@ -27,3 +27,4 @@ n[i + 1] = toupper(n[i + 1]);
 }
 }
 return (n);
+}
