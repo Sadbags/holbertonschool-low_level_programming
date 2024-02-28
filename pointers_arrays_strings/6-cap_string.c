@@ -1,30 +1,27 @@
 #include "main.h"
 
 /**
- * cap_string - capitalizes the first letter of each word in a string
- * @n: input string
- *
- * Return: pointer to the modified string
+ * cap_string - capitalizes every wordof a string
+ * @s: string to modify
+ * Return: the resulting string
 */
-char *cap_string(char *n)
+char *cap_string(char *s)
 {
-int i;
-if (n[0] >= 'a' && n[0] <= 'z')
+int i, j;
+char spe[13] = {' ', '\t', '\n', ',', ';', '.',
+'!', '?', '"', '(', ')', '{', '}'};
+for (i = 0; s[i] != '\0'; i++)
 {
-n[0] = toupper(n[0]);
-}
-for (i = 1; n[i] != '\0'; i++)
+if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
+s[i] -= 32;
+for (j = 0; j < 13; j++)
 {
-if (n[i] == ' ' || n[i] == '\t' || n[i] == '\n' || n[i] == '\r' ||
-n[i] == '\f' || n[i] == '\v' || n[i] == ',' || n[i] == ';' ||
-n[i] == '.' || n[i] == '!' || n[i] == '?' || n[i] == '\"' ||
-n[i] == '(' || n[i] == ')' || n[i] == '{' || n[i] == '}')
+if (s[i] == spe[j])
 {
-if (n[i + 1] >= 'a' && n[i + 1] <= 'z')
-{
-n[i + 1] = toupper(n[i + 1]);
+if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+s[i + 1] -= 32;
 }
 }
 }
-return (n);
+return (s);
 }
