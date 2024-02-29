@@ -15,6 +15,7 @@ if (*s == c)
 {
 return (s);
 }
+s++;
 }
 return (s);
 }
