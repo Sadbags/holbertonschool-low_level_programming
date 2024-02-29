@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main.h"b
 
 /**
  * _strchr - locates a character in a string
@@ -17,5 +17,5 @@ return (s);
 }
 s++;
 }
-return (s);
+return (NULL);
 }
