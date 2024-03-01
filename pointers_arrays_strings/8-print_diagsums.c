@@ -18,7 +18,7 @@ for (i = 0; i < s; i += size + 1)
 {
 tl += a[i];
 }
-for (i = size - 1; i < s - i; i += size - 1)
+for (i = size - 1; i < s - 1; i += size - 1)
 {
 tr += a[i];
 }
