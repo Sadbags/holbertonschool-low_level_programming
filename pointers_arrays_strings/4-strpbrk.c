@@ -3,7 +3,7 @@
  * _strpbrk - funtion that searches a string for any of a set of bytes
  * @s: string to be searched
  * @accept: string containing characters to match
- * return: string s that matches one of the bytescin accept
+ * Return: string s that matches one of the bytescin accept
 */
 char *_strpbrk(char *s, char *accept)
 {
