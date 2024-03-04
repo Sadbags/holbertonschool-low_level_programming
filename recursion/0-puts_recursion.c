@@ -2,14 +2,17 @@
 
 /**
  * _puts_recursion - print a string followed by a new line
- * @s: the string
- * Return: 0
+ * @s: the string to be printed
 */
 void _puts_recursion(char *s)
 {
-if (*s == '\n')
+if (*s)
 {
-write("\n");
-return;
+_putchar(*s);
+_puts_recursion(s + 1);
+}
+else
+{
+_putchar('\n');
 }
 }
