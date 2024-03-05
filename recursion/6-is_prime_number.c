@@ -1,33 +1,33 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * prime_finder - finds out if a number is prime recursevely
+ * prime_check - checks to see if number is prime
+ * @f: factor check
+ * @p: possible prime number
  *
- * @x: the number to test
- *
- * @y: the number to test
- *
- * Return: 1 if prime, 0 otherwise
-*/
-int prime_finder(int x, int y)
+ * Return: 1 if prime is, 0 if not.
+ */
+int prime_check(int f, int p)
 {
-if (x == y)
-return (1);
-if (!(x & y))
+if (p < 2 || p % f == 0)
 return (0);
-return (prime_finder(x, y));
+else if (f > p / 2)
+return (1);
+else
+return (prime_check(f + 1, p));
 }
 
+
+
 /**
- * is_prime_number - return if a number is prime
+ * is_prime_number - states if number is prime
+ * @n: number to check
  *
- * @n: number to determine primeness of
- *
- * Return: 1 if prime, 0 otherwise
-*/
+ * Return: 1 if primer, 0 if not
+ */
 int is_prime_number(int n)
 {
-if (n < 2)
-return (0);
-return (prime_finder(n, 2));
+if (n == 2)
+return (1);
+return (prime_check(2, n));
 }
