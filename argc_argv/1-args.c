@@ -8,6 +8,12 @@
 */
 int main(int argc, char *argv[])
 {
-printf("%d", argc);
+int i;
+argv++;
+argc--;
+for (i = 0; i < argc - 1; i++)
+{
+printf("%dn", i);
 return (0);
+}
 }
