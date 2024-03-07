@@ -19,13 +19,13 @@ if (s2 == NULL)
 s2 = "";
 while (s1[i])
 i++;
-while (s2[j])
-j++;
+while (s2[k])
+k++;
 if (n >= k)
 l = i + k;
 else
 l = i + n;
-str = malloc(sizeof(char) * (l + 1));
+str = malloc(sizeof(char) * l + 1);
 if (str == NULL)
 return (NULL);
 k = 0;
