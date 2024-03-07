@@ -15,8 +15,7 @@ int *m;
 if (min > max)
 return (NULL);
 m = malloc(sizeof(int) * (max - min + 1));
-if
-(m == NULL)
+if(m == NULL);
 while (min <= max)
 m[i++] = min++;
 return (m);
