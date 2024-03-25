@@ -1,7 +1,8 @@
 #include "lists.h"
 
 /**
- * myStartupFun - Apply constructor attribute to mystartupfun
+ * myStartupFun - Apply constructor attribute to mystartupfun()
+ * so tht is executed before main()
 */
 void myStartupfun(void) __attribute__ ((constructor));
 
