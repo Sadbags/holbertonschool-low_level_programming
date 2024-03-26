@@ -10,8 +10,8 @@ dlistint_t *tmp;
 
 while (head != NULL)
 {
-tmp = head;
-head = tmp->next;
-free(temp);
+tmp = head->next;
+free(head);
+head = tmp;
 }
 }
